@@ -3,7 +3,7 @@ file_url = "https://uploadhaven.com/download/82340ae677fe81e9f43bc98bc96531e4"
 
 r = requests.get(file_url, stream = True)
 
-with open("python.pdf","wb") as pdf:
+with open("python.zip","wb") as zip:
 	for chunk in r.iter_content(chunk_size=1024):
 
 		# writing one chunk at a time to pdf file
